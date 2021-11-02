@@ -2,7 +2,8 @@ import React from 'react'
 // import Navbar from './Navbar'
 import Navbarx from './Navbarx'
 import Bannerx from './Bannerx'
-import Productx from './Productx'
+import JudulProductx from './JudulProductx'
+import ListProductx from './ListProductx'
 import Footerx from './Footerx'
 import { Container } from 'react-bootstrap'
 
@@ -15,7 +16,8 @@ class Main extends React.Component {
       <Container fluid>
         <Navbarx />
         <Bannerx />
-        <Productx />
+        <JudulProductx />
+        <ListProductx />
         <Footerx />        
       </Container>
     )
