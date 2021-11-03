@@ -13,7 +13,7 @@ class Navbarx extends React.Component {
             <p className="text-navbar" style={{ "marginRight": "20px", "marginBottom": "0" }}>ABOUT</p>
             <p className="text-navbar" style={{ "marginRight": "20px", "marginBottom": "0" }}>PRODUCT</p>
             <p className="text-navbar" style={{ "marginRight": "20px", "marginBottom": "0" }}>ARTICLES</p>
-            <Button variant="outline-light" type="button">SUBSCRIBE</Button>
+            <Button variant="outline-light" type="button" style={{ "marginRight": "20px" }}>SUBSCRIBE</Button>
         </Col>
       </Row>
     )
