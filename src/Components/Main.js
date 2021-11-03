@@ -4,6 +4,7 @@ import Navbarx from './Navbarx'
 import Bannerx from './Bannerx'
 import JudulProductx from './JudulProductx'
 import ListProductx from './ListProductx'
+import PaginationProductx from './PaginationProductx'
 import Footerx from './Footerx'
 import { Container } from 'react-bootstrap'
 
@@ -18,6 +19,7 @@ class Main extends React.Component {
         <Bannerx />
         <JudulProductx />
         <ListProductx />
+        <PaginationProductx />
         <Footerx />        
       </Container>
     )

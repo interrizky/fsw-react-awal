@@ -5,7 +5,6 @@ import { Row, Col } from 'react-bootstrap'
 class ListProductx extends React.Component {
   render(){
     return(
-
         <Row className="list-products">
           <Col className="kotak-wrapper wrapper-product-1 shadow-lg rounded" md="4">
             <Col className="display-depan dsp-foreground-1" id="dsp-foreground-1">
@@ -63,7 +62,7 @@ class ListProductx extends React.Component {
               <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 9</p>            
             </Col>
           </Col>                       
-        </Row>      
+        </Row>
     )
   }
 }
