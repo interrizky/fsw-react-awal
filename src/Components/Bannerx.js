@@ -2,6 +2,10 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import BgImage from '../Assets/images/jumbotron.png'
 
+/* manual styling */
+import '../Assets/css/styles.css'
+/* bootstrap */
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Bannerx extends React.Component {
   render(){

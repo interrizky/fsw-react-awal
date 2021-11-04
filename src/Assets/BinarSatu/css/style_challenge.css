@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+hr.new5 {
+  width: 4%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+hr.new4 {
+  width: 10%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+hr.new3 {
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+.navbar {
+  height:75px;
+  background-color: #487eb0;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;  
+}
+
+.navbar .logo .text-logo {
+  text-decoration: none;
+  color: whitesmoke;  
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.banner .wrapper-banner {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /*   background-color: #dededd; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center; */
+}
+
+.banner .wrapper-banner .wrapper-text-banner {
+  text-align: center;
+}
+
+.banner .wrapper-banner .wrapper-text-banner .hero-judul {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.banner .wrapper-banner .wrapper-text-banner .hero-subjudul {
+  font-size: 18px;
+}
+
+/* .banner .wrapper-banner img {
+  width: 100%;
+} */
+
+.product-details .box-right {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.product {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f4f7f4;
+}
+
+/* .product img {
+  padding-bottom: 5%;
+} */
+
+.product .product-box {
+  padding: 5%;
+}
+
+.product .card-deck {
+  display: flex;
+  padding-bottom: 25px;
+  padding-right: 15%;
+  padding-left: 15%;
+  justify-content: space-around;
+}
+
+.product .card-deck .card {
+  margin: 50px;
+}
+
+.product .card-deck .card .card-body h5 {
+  font-style: italic;
+  text-align: center;
+}
+
+.product .card-deck .card .card-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.product-details .box-right {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.subscribe {
+  padding-top: 5%;
+}
+
+.subscription {
+  background-color: #f2f2f2;
+  padding: 10%;
+}
+
+.footer {
+  /* padding-right: 5%; */
+  display: flex;
+  /* justify-content: flex-end; */
+  background-color: #487eb0;
+}
+
+.wrapper-menu-footer {
+  display: flex; /* buat samping-sampingan */
+  list-style-type: none; /* biar ul list-nya ilang ga bulet */
+  margin: 0; /* efek margin di li, di 0 biar ilang */
+  padding: 0; /* efek margin kasi pading 0 */
+  justify-content: flex-end; /* tulisan menu-nya ke kanan semua */
+}
+
+.wrapper-menu-footer li {
+  /* margin-left: 15px; */
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.a-style-footer-x {
+  font-size: 18px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* @media only screen and (max-width: 442px) {
+  .a-style-navbar-x {
+    display: none;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-judul {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-subjudul {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .product-details .box-right .wrapper-desc-details {
+    padding: 25px;
+  }
+} */
+
+/* produk details bagian about lgsg bikin spasi */
+@media only screen and (max-width: 765px) {
+  .product-details .box-right .wrapper-desc-details {
+    padding: 10px;
+  }
+}
+
+/* produk jadi 1-1-1 */
+@media only screen and (max-width: 715px) {
+  .product .card-deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product .card-deck .card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .a-style-navbar-x {
+    display: none;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-judul {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-subjudul {
+    font-size: 12px;
+  }
+}

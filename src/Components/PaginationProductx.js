@@ -1,6 +1,11 @@
 import React from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
 
+/* manual styling */
+import '../Assets/css/styles.css'
+/* bootstrap */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class PaginationProductx extends React.Component {
   render() {
     return(

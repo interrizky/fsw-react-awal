@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import App from './App';
-import Main from './Components/Main';
-
-import '../src/Assets/css/styles.css';
+// import Main from './Components/Main'; /* diganti ke Routes */
+import Routes from './Routes'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studying</title>
+    <!-- bootstrap -->
+    <!-- CSS only -->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h1>JavaScript</h1>
+    </div>
+    <script type="text/javascript">
+      class testingClass {
+        printKaliTigasan(params) {
+          this.params = params
+          this.text = []
+          for (let i = 0; i < 3; i++) {
+            this.text[i] = this.params
+          }
+          return this.text.join('')
+        }
+      }
+      let testing = new testingClass()
+      console.log(testing.printKaliTigasan('Binar'))
+
+      class ArrayBukanTigaDua {
+        constructor(arraySatu, arrayDua) {
+          this.arraySatu = arraySatu
+          this.arrayDua = arrayDua
+        }
+
+        filterTigaDua() {
+          if (this.arraySatu.length + this.arrayDua.length != 32) {
+            return true
+          } else {
+            return false
+          }
+        }
+
+        printArrayOfString() {
+          if (this.filterTigaDua(this.arraySatu, this.arrayDua)) {
+            for (let i = 0; i < this.arraySatu.length; i++) {
+              if (typeof this.arraySatu[i] === 'string') {
+                console.log(this.arraySatu[i])
+              }
+            }
+
+            for (let y = 0; y < this.arrayDua.length; y++) {
+              if (typeof this.arrayDua[y] === 'string') {
+                console.log(this.arrayDua[y])
+              }
+            }
+          }
+        }
+
+        printModulo() {
+          if (this.filterTigaDua(this.arraySatu, this.arrayDua)) {
+            for (let i = 0; i < this.arraySatu.length; i++) {
+              if (i % 2 == 1) {
+                console.log(this.arraySatu[i])
+              }
+            }
+
+            for (let y = 0; y < this.arrayDua.length; y++) {
+              if (y % 2 == 1) {
+                console.log(this.arrayDua[y])
+              }
+            }
+          }
+        }
+
+        printConcatArray(params) {
+          var result = []
+          for (let i = 0; i < params.length; i++) {
+            result = result.concat(params[i])
+          }
+          console.log(result)
+
+          // if (this.filterTigaDua(this.arraySatu, this.arrayDua)) {
+          //   this.gabungan = this.arraySatu.concat(this.arrayDua)
+
+          //   for (this.z = 0; this.z < this.gabungan.length; this.z++) {
+          //     console.log(this.gabungan[this.z])
+          //   }
+          // }
+        }
+      }
+
+      let baruBukanTigaDua = new ArrayBukanTigaDua()
+      baruBukanTigaDua.arraySatu = [
+        3,
+        100,
+        283,
+        'saya',
+        'adalah',
+        'kapiten',
+        75
+      ]
+      baruBukanTigaDua.arrayDua = [200, 300, 21, 'dari', 'indonesia']
+      let arrayTiga = [3, 100, 283, 'saya', 'adalah', 'kapiten', 75]
+      let arrayEmpat = [200, 300, 21, 'dari', 'indonesia']
+      let arrayLima = [3, 100, 283, 'saya', 'adalah', 'kapiten', 75]
+      // console.log(baruBukanTigaDua.filterTigaDua(a, b))
+      // baruBukanTigaDua.printArrayOfString()
+      // baruBukanTigaDua.printModulo()
+      baruBukanTigaDua.printConcatArray(arrayTiga, arrayEmpat, arrayLima)
+
+      // class ObjectInArray {
+      //   constructor(params) {
+      //     this.params = params
+      //   }
+
+      //   printCaraSatu(params) {
+      //     this.params = params
+
+      //     for (this.i = 0; this.i < this.params.length; this.i++) {
+      //       console.log(this.params[this.i])
+      //     }
+      //   }
+
+      //   printCaraDua(params) {
+      //     this.params = params
+
+      //     for (this.i = 0; this.i < this.params.length; this.i++) {
+      //       for (this.j in params[this.i]) {
+      //         console.log(params[this.i][this.j])
+      //       }
+      //     }
+      //   }
+      // }
+
+      // let datax = [
+      //   {
+      //     name: 'dila',
+      //     kelas: 12,
+      //     sekolah: 'smp mana aja',
+      //     address: 'depok',
+      //     umur: 16
+      //   },
+      //   {
+      //     name: 'bila',
+      //     kelas: 12,
+      //     sekolah: 'smp mana aja',
+      //     address: 'depok',
+      //     umur: 16
+      //   },
+      //   {
+      //     name: 'tina',
+      //     kelas: 12,
+      //     sekolah: 'smp mana aja',
+      //     address: 'depok',
+      //     umur: 17
+      //   },
+      //   {
+      //     name: 'kila',
+      //     kelas: 12,
+      //     sekolah: 'smp mana aja',
+      //     address: 'depok',
+      //     umur: 16
+      //   },
+      //   {
+      //     name: 'rila',
+      //     kelas: 12,
+      //     sekolah: 'smp mana aja',
+      //     address: 'depok',
+      //     umur: 17
+      //   }
+      // ]
+
+      // let baruAjaAh = new ObjectInArray()
+      // baruAjaAh.printCaraDua(datax)
+      // baruAjaAh.printCaraDua(datax)
+    </script>
+  </body>
+</html>

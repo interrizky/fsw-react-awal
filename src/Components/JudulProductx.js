@@ -1,6 +1,10 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 
+/* manual styling */
+import '../Assets/css/styles.css'
+/* bootstrap */
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class JudulProductx extends React.Component {
   render(){

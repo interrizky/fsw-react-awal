@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+hr.new5 {
+  width: 4%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+hr.new4 {
+  width: 10%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+hr.new3 {
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+.navbar {
+  height:75px;
+  background-color: #487eb0;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;  
+}
+
+.navbar .logo .text-logo {
+  text-decoration: none;
+  color: whitesmoke;  
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.banner .wrapper-banner {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /*   background-color: #dededd; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center; */
+}
+
+.banner .wrapper-banner .wrapper-text-banner {
+  text-align: center;
+}
+
+.product {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f4f7f4;
+}
+
+.product .product-box {
+  padding: 5%;
+}
+
+#cardDeck {
+  display: flex;
+  padding-bottom: 25px;
+  padding-right: 15%;
+  padding-left: 15%;
+  justify-content: space-around;
+}
+
+#card {
+  margin: 50px;
+}
+
+#cardTitle {
+  font-style: italic;
+  text-align: center;
+}
+
+#cardText {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.product-details #boxRight {
+  padding-left: 5%;
+  padding-right: 5%;  
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.subscribe {
+  padding-top: 5%;
+}
+
+.subscription {
+  background-color: #f2f2f2;
+  padding: 10%;
+}
+
+.footer {
+  height: 75px;  
+  background-color: #487eb0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer .menuFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  font-size: 20px;  
+}
+
+/* @media only screen and (max-width: 442px) {
+  .a-style-navbar-x {
+    display: none;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-judul {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-subjudul {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .product-details #boxRight .wrapper-desc-details {
+    padding: 25px;
+  }
+} */
+
+/* produk details bagian about lgsg bikin spasi */
+@media only screen and (max-width: 765px) {
+  .product-details #boxRight .wrapper-desc-details {
+    padding: 10px;
+  }
+}
+
+/* produk jadi 1-1-1 */
+@media only screen and (max-width: 715px) {
+  .product #cardDeck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product #cardDeck #card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .a-style-navbar-x {
+    display: none;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-judul {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .banner .wrapper-banner .wrapper-text-banner .hero-subjudul {
+    font-size: 12px;
+  }
+}

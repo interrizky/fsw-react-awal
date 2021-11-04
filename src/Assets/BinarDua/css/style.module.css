@@ -1,0 +1,189 @@
+body {
+  font-family: OpenSans;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.navbar {
+  padding-right: 5%;
+  display: flex;
+  /* justify-content: flex-end; */
+  color: black;
+  overflow: hidden;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.wrapperMenuNavbar {
+  display: flex; /* buat samping-sampingan */
+  list-style-type: none; /* biar ul list-nya ilang ga bulet */
+  margin: 0; /* efek margin di li, di 0 biar ilang */
+  padding: 0; /* efek margin kasi pading 0 */
+  justify-content: flex-end; /* tulisan menu-nya ke kanan semua */
+}
+
+.wrapperMenuNavbar li {
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.aStyleNavbarX {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.opening {
+  padding: 25px;
+}
+
+.opening .openingGambar img {
+  border-radius: 25px;
+}
+
+.opening .opening-text .wrapperOpeningTextDetails {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pictures .judul {
+  padding-top: 10px;
+}
+
+.pictures .judul p {
+  text-align: center;
+  font-size: 32px;
+  font-family: Roboto;
+}
+
+.pictures .foto {
+  display: flex;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.pictures .foto div {
+  padding: 15px;
+}
+
+.pictures .foto img {
+  border-radius: 25px;
+}
+
+/* .ProductDetails {
+  padding-top: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.ProductDetails .deskripsi {
+  padding: 75px;
+}
+
+.ProductDetails .deskripsi .tentang {
+  font-style: italic;
+  text-align: justify;
+}
+
+hr.new {
+  width: 10%;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: auto !important;
+}
+
+.checkout {
+  /* padding: 50px; */
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+
+.checkout .deskripsi {
+  /*   display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 25px;
+  padding-left: 40px;
+  padding-top: 50px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.button .tombol {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.btn-success {
+  background-color: #6cbe5e;
+}
+
+.footer {
+  /* padding-right: 5%; */
+  display: flex;
+  /* justify-content: flex-end; */
+  background-color: #487eb0;
+}
+
+.wrapper-menu-footer {
+  display: flex; /* buat samping-sampingan */
+  list-style-type: none; /* biar ul list-nya ilang ga bulet */
+  margin: 0; /* efek margin di li, di 0 biar ilang */
+  padding: 0; /* efek margin kasi pading 0 */
+  justify-content: flex-end; /* tulisan menu-nya ke kanan semua */
+}
+
+.wrapper-menu-footer li {
+  /* margin-left: 15px; */
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.a-style-footer-x {
+  font-size: 18px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer {
+  /* padding-right: 5%; */
+  display: flex;
+  /* justify-content: flex-end; */
+  background-color: #6cbe5e;
+}
+
+.wrapper-menu-footer {
+  display: flex; /* buat samping-sampingan */
+  list-style-type: none; /* biar ul list-nya ilang ga bulet */
+  margin: 0; /* efek margin di li, di 0 biar ilang */
+  padding: 0; /* efek margin kasi pading 0 */
+  justify-content: flex-end; /* tulisan menu-nya ke kanan semua */
+}
+
+.wrapper-menu-footer li {
+  /* margin-left: 15px; */
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.a-style-footer-x {
+  font-size: 18px;
+  text-decoration: none;
+  color: whitesmoke;
+}

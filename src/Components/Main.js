@@ -1,14 +1,17 @@
 import React from 'react'
-// import Navbar from './Navbar'
+import { Container } from 'react-bootstrap'
+
 import Navbarx from './Navbarx'
 import Bannerx from './Bannerx'
 import JudulProductx from './JudulProductx'
 import ListProductx from './ListProductx'
 import PaginationProductx from './PaginationProductx'
 import Footerx from './Footerx'
-import { Container } from 'react-bootstrap'
 
+/* manual styling */
 import '../Assets/css/styles.css'
+
+/* bootstrap */
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Main extends React.Component {

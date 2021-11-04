@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studying</title>
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style_challenge.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h1>JavaScript</h1>
+    </div>
+
+    <script type="text/javascript">
+      //jika b + a bukan 32, looping b - else print boolean
+      //answer: buat variabel baru, b buat stopper
+
+      //satu
+      // var a = 5;
+      // var b = 32;
+      // if ((b+a)!=32) {
+      //   for(a; (b+a)!= 32; b--) {
+      //     console.log(b);
+      //   }
+      // } else {
+      //   console.log(false);
+      // }
+
+      //dua
+      // var a = 5;
+      // var b = 32;
+      // if((b+a)!=32){
+      //   while((b+a) != 32){
+      //     console.log(b);
+      //     b--;
+      //   }
+      // } else {
+      //   console.log(false);
+      // }
+
+      //tiga
+      // var a = 5;
+      // var b = 32;
+      // if((b+a)!=32){
+      //   do{
+      //     console.log(b);
+      //     b--;
+      //   } while((b+a) != 32);
+      // } else {
+      //   console.log(false);
+      // }
+
+      /* SECOND ASSIGNMENT */
+      // Ridho :
+      // Array : [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ]
+      // jika b + ( panjang array ) bukan 32, looping array
+      // else print boolean
+
+      // let dataArray = [ 3, 100, 283, "saya", "adalah", "kapiten", 75 ];
+      // let z = 0;
+
+      // if( (z + dataArray.length) != 32 ) {
+      //   for(z; z < dataArray.length; z++)
+      //   {
+      //     console.log(dataArray[z]);
+      //   }
+      // } else {
+      //   console.log(false);
+      // }
+
+      // Terra :
+      // Array: [ 20, 12, 43, 54, 24 ]
+      // jika panjang array + 1 != 35, looping array
+      // else print boolean
+
+      // let array = [ 20, 12, 43, 54, 24 ];
+      // let t = 0;
+
+      // if( (array.length+1) != 35 ) {
+      //   for(t; t < array.length; t++)
+      //   {
+      //     console.log(array[t]);
+      //   }
+      // } else {
+      //   console.log(false);
+      // }
+
+      // 1.  Kiky :
+      // Array : [ 2, 5, 10, 'ini dia', 'data', 100 , 38 ]
+      // jika panjang array < 50, looping array
+      // else print boolean
+
+      // let arrays = [ 2, 5, 10, 'ini dia', 'data', 100 , 38 ];
+      // let m = 0;
+
+      // if( (arrays.length) < 50 ) {
+      //   for(m; m < arrays.length; m++)
+      //   {
+      //     console.log( arrays[m] );
+      //   }
+      // } else {
+      //   console.log(false);
+      // }
+
+      /* THIRD ASSIGNMENT */
+      // Ridho :
+      // Array : [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ]
+      // Array : [ 200, 300, 21, 'dari', indonesia ]
+      // jika array b + array b bukan 32,
+      // looping array with the condition
+      // - print the array of string
+      // - prtin the array of modulo = 1
+      // - print the array of sum array a + array b
+      // else print boolean
+
+      let a = [3, 100, 283, 'saya', 'adalah', 'kapiten', 75]
+      let b = [200, 300, 21, 'dari', 'indonesia']
+
+      // KONDISI SATU
+      // if( (a.length + b.length) != 32 )
+      // {
+      //     for(let i = 0; i < a.length ; i++)
+      //     {
+      //         if( typeof a[i] === 'string') {
+      //           console.log(a[i]);
+      //         }
+      //     }
+
+      //     for(let y = 0; y < b.length ; y++)
+      //     {
+      //         if( typeof b[y] === 'string') {
+      //           console.log(b[y]);
+      //         }
+      //     }
+      // } else {
+      //     console.log(false);
+      // }
+
+      // KONDISI DUA
+      // if( (a.length + b.length) != 32 )
+      // {
+      //     for(let i = 0; i < a.length ; i++)
+      //     {
+      //         if( (i % 2) == 1) {
+      //           console.log(a[i]);
+      //         }
+      //     }
+
+      //     for(let y = 0; y < b.length ; y++)
+      //     {
+      //         if( (y % 2) == 1)
+      //         {
+      //           console.log(b[y]);
+      //         }
+      //     }
+      // } else {
+      //     console.log(false);
+      // }
+
+      // KONDISI TIGA
+      // if( (a.length + b.length) != 32 )
+      // {
+      //     let gabungan = a.concat(b);
+
+      //     for(z=0; z < gabungan.length; z++)
+      //     {
+      //         console.log(gabungan[z]);
+      //     }
+      // } else {
+      //     console.log(false);
+      // }
+
+      /* PENERAPAN FUNCTION */
+      // let a = [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ];
+      // let b = [ 200, 300, 21, 'dari', 'indonesia' ];
+
+      // KONDISI SATU
+      function textAja(text) {
+        if (typeof text === 'string') {
+          console.log(text)
+        }
+      }
+
+      function printText(x, y) {
+        for (let i = 0; i < x.length; i++) {
+          textAja(a[i])
+        }
+        for (let z = 0; z < y.length; z++) {
+          textAja(b[z])
+        }
+      }
+
+      // panggil method kondisi satu
+      // ( (a.length + b.length) != 32 ) ? printText(a,b) : console.log("Panjang Dua Array Tidak Boleh Sama Dengan 32");
+
+      // KONDISI DUA
+      const modulo = function (x) {
+        if (x % 2 == 1) {
+          return x
+        }
+      }
+
+      function printArrayLagi() {
+        for (let i = 0; i < a.length; i++) {
+          if (modulo(i)) {
+            console.log(a[i])
+          }
+        }
+
+        for (let y = 0; y < b.length; y++) {
+          if (modulo(y)) {
+            console.log(b[y])
+          }
+        }
+      }
+      // panggil method kondisi dua
+      // ( (a.length + b.length) != 32 ) ? printArrayLagi() : console.log("Something is not right");
+
+      // KONDISI TIGA
+      let gabungan = ''
+      function printGabungan() {
+        gabungan = a.concat(b)
+        gabungan.forEach((indeks) => console.log(indeks))
+      }
+      // panggil method kondisi tiga
+      // (gabungan.length != 32) ? printGabungan() : console.log(false);
+
+      /* PENGAYAAN TEXT LOOPING */
+      function printKaliTigasan(params) {
+        const text = []
+        for (let i = 0; i < 3; i++) {
+          text[i] = params
+        }
+        //text.forEach(indeks => console.log(indeks));
+        let tigakali = text.join('')
+        console.log(tigakali)
+      }
+      // printKaliTigasan("Binar")
+
+      /* CONVERT OBJECT TO ARRAY */
+      // let data = {
+      //   name: 'nama', // string
+      //   kelas: 12, // number / integer
+      //   sekolah: 'smp mana aja',
+      //   address: 'depok',
+      //   umur: 17,
+      // }
+
+      // const keyAja = Object.keys(data);
+      // console.log(keyAja);
+
+      // const nilaiAja = Object.values(data);
+      // console.log(nilaiAja);
+
+      // const entries = Object.entries(data);
+      // console.log(entries);
+
+      /* CONVERT OBJ */
+      let datax = [
+        {
+          name: 'dila',
+          kelas: 12,
+          sekolah: 'smp mana aja',
+          address: 'depok',
+          umur: 16
+        },
+        {
+          name: 'bila',
+          kelas: 12,
+          sekolah: 'smp mana aja',
+          address: 'depok',
+          umur: 16
+        },
+        {
+          name: 'tina',
+          kelas: 12,
+          sekolah: 'smp mana aja',
+          address: 'depok',
+          umur: 17
+        },
+        {
+          name: 'kila',
+          kelas: 12,
+          sekolah: 'smp mana aja',
+          address: 'depok',
+          umur: 16
+        },
+        {
+          name: 'rila',
+          kelas: 12,
+          sekolah: 'smp mana aja',
+          address: 'depok',
+          umur: 17
+        }
+      ]
+
+      /* convert array to object */
+      // const obj = Object.assign({}, datax);
+      // console.log(obj);
+
+      /* convert object to array */
+      // var result = Object.keys(obj).map((key) => [Number(key), obj[key]]);
+      // const entries = Object.entries(obj);
+      // console.log(entries);
+      // const nilaiAja = Object.values(obj);
+      // console.log(nilaiAja);
+
+      for (let i = 0; i < datax.length; i++) {
+        // console.log( result[i] );
+        // console.log( entries[i] );
+        /* task 1 */
+        // console.log( datax[i] );
+        /* task 2 */
+        /* cara 1 */
+        // console.log( datax[i].name );
+        // console.log( datax[i].kelas );
+        // console.log( datax[i].sekolah );
+        // console.log( datax[i].address );
+        // console.log( datax[i].umur );
+        /* cara 2 */
+        // for(let j in datax[i])
+        // {
+        //   console.log( datax[i][j]);
+        // }
+        /* cara 3 - pake MAP */
+      }
+    </script>
+  </body>
+</html>

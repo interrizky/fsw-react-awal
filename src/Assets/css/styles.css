@@ -14,7 +14,12 @@ body {
 }
 
 .navbar .logo {
-  font-size: 24px;
+  font-size: 24px;  
+}
+
+.navbar .logo .textLogo {
+  text-decoration: none;
+  color: whitesmoke;  
 }
 
 .navbar .menu {
@@ -93,7 +98,6 @@ body {
 .footer .menu-footer {
   display: flex;
   justify-content: flex-end;
-
   margin-top: 25px;
   font-size: 20px;  
 }
