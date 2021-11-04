@@ -21,4 +21,5 @@ class ProductDetailsCBD extends React.Component {
   }
 }
 
+
 export default ProductDetailsCBD

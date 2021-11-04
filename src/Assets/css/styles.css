@@ -42,7 +42,7 @@ body {
   text-align: center;
 }
 
-.list-products {
+.listProducts {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,7 +51,7 @@ body {
   text-align: center;
 }
 
-.list-products .kotak-wrapper {
+.listProducts .kotakWrapper {
   background-color: #fafafa;
   display: flex;
   justify-content: center;

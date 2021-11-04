@@ -1,69 +1,73 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 
 /* manual styling */
-import '../Assets/css/styles.css'
+// import styles from '../Assets/css/styles.css'
+
+let dataImage = ["Bunga 1", "Bunga 2", "Bunga 3", "Bunga 4", "Bunga 5", "Bunga 6", "Bunga 7", "Bunga 8", "Bunga 9"]
 
 class ListProductx extends React.Component {
+  HoverImage = (event) => {
+    console.log(event)
+    console.log(event.target)
+    console.log(event.relatedTarget)
+
+    /* dsp foreground */
+    // event.target.style += 'background-color: grey; opacity: 30%;'
+    /* dsp background */
+    // event.relatedTarget.style = 'position: relative; top: 150px'
+  }
+
+  HoverOutImage = (e) => {
+    console.log(e)
+    console.log(e.target)
+    console.log(e.relatedTarget)
+
+    /* dsp foreground */
+    // e.target.style = 'unset'
+    /* dsp background */
+    // e.relatedTarget.style = 'unset'
+  }
+
   render(){
     return(
-        <Row className="list-products">
-          <Col className="kotak-wrapper wrapper-product-1 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-1" id="dsp-foreground-1">
-              <img src={require('../Assets/images/pngfind-1-transparent.png')} alt="image1" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 1</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-2 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-2" id="dsp-foreground-2">
-              <img src={require('../Assets/images/pngfind-2-transparent.png')} alt="image2" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 2</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-3 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-3" id="dsp-foreground-2">
-              <img src={require('../Assets/images/pngfind-3-transparent.png')} alt="image3" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 3</p>            
-            </Col>
-          </Col>             
-
-          <Col className="kotak-wrapper wrapper-product-4 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-4" id="dsp-foreground-4">
-              <img src={require('../Assets/images/pngfind-4-transparent.png')} alt="image4" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 4</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-5 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-5" id="dsp-foreground-5">
-              <img src={require('../Assets/images/pngfind-5-transparent.png')} alt="image5" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 5</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-6 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-6" id="dsp-foreground-6">
-              <img src={require('../Assets/images/pngfind-6-transparent.png')} alt="image6" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 6</p>            
-            </Col>
-          </Col>   
-
-          <Col className="kotak-wrapper wrapper-product-7 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-7" id="dsp-foreground-7">
-              <img src={require('../Assets/images/pngfind-7-transparent.png')} alt="image7" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 7</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-8 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-8" id="dsp-foreground-8">
-              <img src={require('../Assets/images/pngfind-8-transparent.png')} alt="image8" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 8</p>            
-            </Col>
-          </Col>
-          <Col className="kotak-wrapper wrapper-product-9 shadow-lg rounded" md="4">
-            <Col className="display-depan dsp-foreground-9" id="dsp-foreground-9">
-              <img src={require('../Assets/images/pngfind-9-transparent.png')} alt="image9" style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}></img>
-              <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>Bunga 9</p>            
-            </Col>
-          </Col>                       
+        <Row className="listProducts" style={{
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "alignContent": "center",
+          "alignItems": "center",
+          "textAlign": "center"         
+        }}>
+          {
+            // How To Looping, but with array data
+            // taruh event di kotakWrapper failed 
+            dataImage.map((data, index) => {
+                return(
+                  <Col md="4" key={ index+1 } className={ `kotakWrapper wrapper-product-${index+1} shadow-lg rounded` } style={{ 
+                    "backgroundColor": "#fafafa",
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "textAlign": "center",
+                    "flexDirection": "column",
+                    "width": "350px",
+                    "height": "350px",
+                    "margin": "25px",                    
+                  }}>
+                    <Col className={ `display-depan dsp-foreground-${index+1}` } id={ `dsp-foreground-${index+1}` } style={{ "position": "absolute" }} onMouseLeave={ this.HoverOutImage } onMouseOver={ this.HoverImage } >
+                      <img src={ require(`../Assets/images/pngfind-${index+1}-transparent.png`) } alt={data} style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}  ></img>
+                      <p className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>{data}</p>
+                    </Col>
+                    <Col className={ `dsp-background-${index+1}` } id={ `dsp-background-${index+1}` } style={{ "position": "relative", "top": "150px", "display": "none" }}>
+                      <a href="https://google.com">
+                        <Button className={ `tombol-info-${index+1}` } style={{ "width": "150px", "height": "50px" }} variant='dark'>Href</Button>
+                      </a>
+                    </Col>                                    
+                  </Col>                  
+                )
+            })
+          }
         </Row>
     )
   }
