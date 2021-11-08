@@ -11,7 +11,7 @@ class Navbarx extends React.Component {
     return(
       <Row className="navbar">
         <Col className="logo" md="4">
-            <a className="text-logo" style={{"marginLeft": "35px", "fontWeight": "bold"}} href="https://google.com">LOGO</a>
+            <a className="text-logo" style={{"marginLeft": "35px", "fontWeight": "bold"}} href="/flower">LOGO</a>
         </Col>
         <Col className="menu" md="8">
             <p className="text-navbar" style={{ "marginRight": "20px", "marginBottom": "0" }}>ABOUT</p>

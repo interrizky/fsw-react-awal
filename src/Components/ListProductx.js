@@ -4,7 +4,17 @@ import { Row, Col, Button } from 'react-bootstrap'
 /* manual styling */
 // import styles from '../Assets/css/styles.css'
 
-let dataImage = ["Bunga 1", "Bunga 2", "Bunga 3", "Bunga 4", "Bunga 5", "Bunga 6", "Bunga 7", "Bunga 8", "Bunga 9"]
+let dataImage = [
+  {name : "Bunga 1", price : 100000}, 
+  {name : "Bunga 2", price : 200000}, 
+  {name: "Bunga 3", price : 300000}, 
+  {name : "Bunga 4", price : 400000}, 
+  {name : "Bunga 5", price : 500000}, 
+  {name : "Bunga 6", price : 600000}, 
+  {name : "Bunga 7", price : 700000}, 
+  {name : "Bunga 8", price : 800000}, 
+  {name : "Bunga 9", price : 900000} 
+]
 
 class ListProductx extends React.Component {
   HoverImage = (event) => {
@@ -34,29 +44,29 @@ class ListProductx extends React.Component {
           {
             // How To Looping, but with array data
             dataImage.map((data, index) => {
-                return(
-                  <Col md="4" key={ index+1 } className={ `kotakWrapper wrapper-product-${index+1} shadow-lg rounded` } style={{ 
-                    "backgroundColor": "#fafafa",
-                    "display": "flex",
-                    "justifyContent": "center",
-                    "alignItems": "center",
-                    "textAlign": "center",
-                    "flexDirection": "column",
-                    "width": "350px",
-                    "height": "300px",
-                    "margin": "25px",                    
-                  }}>
-                    <Col style={{ "position": "absolute" }} className={ `display-depan dsp-foreground-${index+1}` } id={ `${index+1}` } onMouseOver={ this.HoverImage } onMouseLeave={ this.HoverOutImage } >
-                      <img id={ `${index+1}` } src={ require(`../Assets/images/pngfind-${index+1}-transparent.png`) } alt={data} style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}  ></img>
-                      <p id={ `${index+1}` } className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>{data}</p>
-                    </Col>
-                    <Col className={ `dsp-background-${index+1}` } id={ `dsp-background-${index+1}` } style={{ "position": "relative", "top": "125px", "display": "none" }}>
-                      <a href="https://google.com">
-                        <Button className={ `tombol-info-${index+1}` } style={{ "width": "175px", "height": "50px" }} variant='dark'>Href</Button>
-                      </a>
-                    </Col>                                    
-                  </Col>                  
-                )
+              return(
+                <Col md="4" key={ index+1 } className={ `kotakWrapper wrapper-product-${index+1} shadow-lg rounded` } style={{ 
+                  "backgroundColor": "#fafafa",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "textAlign": "center",
+                  "flexDirection": "column",
+                  "width": "350px",
+                  "height": "300px",
+                  "margin": "25px",                    
+                }}>
+                  <Col style={{ "position": "absolute" }} className={ `display-depan dsp-foreground-${index+1}` } id={ `${index+1}` } onMouseOver={ this.HoverImage } onMouseOut={ this.HoverOutImage } >
+                    <img id={ `${index+1}` } src={ require(`../Assets/images/pngfind-${index+1}-transparent.png`) } alt={data.name} style={{ "width": "200px", "height": "175px", "marginTop": "25px" }}  ></img>
+                    <p id={ `${index+1}` } className="text-wrap" style={{"marginTop": "16px", "width": "200px"}}>{data.name}</p>
+                  </Col>
+                  <Col className={ `dsp-background-${index+1}` } id={ `dsp-background-${index+1}` } style={{ "position": "relative", "top": "125px", "display": "none" }}>
+                    <a href={ `/flower/${index+1}/${data.price}/${data.name}` }>
+                      <Button className={ `tombol-info-${index+1}` } style={{ "width": "175px", "height": "50px" }} variant='dark'>Href</Button>
+                    </a>
+                  </Col>                                    
+                </Col>                  
+              )
             })
           }
         </Row>

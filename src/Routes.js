@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // import ListProductx from './Components/ListProductx'
 // import JudulProductx from './Components/JudulProductx'
 
 import Main from './Components/Main'
+import MainFD from './Components/FlowerDetailComp/MainFD'
 import MainSatu from './Components/MainBS'
 import MainDua from '../src/Components/ComponentsBinarDua/MainCBD'
 
@@ -13,11 +14,14 @@ class Routes extends React.Component {
     return(
       <Router>
         <Switch>
-          <Route exact path="/" component= { Main } />
-          {/* <Route exact path="/list-product" component= { ListProductx } /> */}
-          {/* <Route exact path="/list-product/:id">
-            <JudulProductx />
+          <Route exact path="/flower" component= { Main } />
+
+          {/* <Route path="/flower/:indeks/:nama">
+            <MainFD />
           </Route> */}
+
+          <Route path="/flower/:indeks/:harga/:nama" component={ MainFD } /> 
+          {/* <Route path="/details/:id" component={DetailsPage}/> */}
 
           <Route exact path="/binarsatu" component={ MainSatu } />
           <Route exact path="/binardua" component={ MainDua } />
