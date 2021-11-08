@@ -7,7 +7,7 @@ import { Row, Col, Button } from 'react-bootstrap'
 let dataImage = [
   {name : "Bunga 1", price : 100000}, 
   {name : "Bunga 2", price : 200000}, 
-  {name: "Bunga 3", price : 300000}, 
+  {name : "Bunga 3", price : 300000}, 
   {name : "Bunga 4", price : 400000}, 
   {name : "Bunga 5", price : 500000}, 
   {name : "Bunga 6", price : 600000}, 
