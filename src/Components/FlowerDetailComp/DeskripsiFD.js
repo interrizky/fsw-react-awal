@@ -1,25 +1,46 @@
 import React from 'react'
 import { Col, Button, Form } from 'react-bootstrap'
 
-import PropTypes from "prop-types"
+// import PropTypes from 'prop-types'
 import { withRouter } from "react-router"
 
 class DeskripsiFD extends React.Component {
-  static propTypes = {
-    match: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
+  state = {
+    indeks: null,
+    nama: null,
+    harga: null
   }
 
-  clickPrice(harga) {
-    alert(`Total Harga : Rp ${ (Number(document.querySelector('.qty').value)*harga).toLocaleString('id-ID') }`)
+  constructor(props) {
+    super(props)
+    // console.log(props)
+
+    this.state.indeks = props.match.params.indeks
+    this.state.nama = props.match.params.nama
+    this.state.harga = props.match.params.harga
+
+    // console.log(this.state.indeks)
+  }
+
+  componentDidMount() {
+    // this.setState({ indeks: this.state.indeks, nama: this.state.nama, harga: this.state.harga })
+  }
+
+  // static propTypes = {
+  //   match: PropTypes.object.isRequired,
+  //   location: PropTypes.object.isRequired,
+  //   history: PropTypes.object.isRequired
+  // }
+
+  clickPrice(angkaHarga) {
+    alert(`Total Harga : Rp ${ (Number(document.querySelector('.qty').value) * angkaHarga).toLocaleString('id-ID') }`)
   }
 
   render() {
-    const { match } = this.props
+    // const { match } = this.props
 
-    let nama = match.params.nama
-    let harga = match.params.harga
+    // let nama = match.params.nama
+    // let harga = match.params.harga
 
     return(
       <Col className="teks-deskripsi col-md-8 m-3 shadow-lg rounded" style={{ 
@@ -36,12 +57,14 @@ class DeskripsiFD extends React.Component {
           <h3><b>Description</b></h3>
           <Col className="isi-review text-justify">
             <p><i>Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis dictum fermentum nisi at tempus. Maecenas nec purus diam. Curabitur viverra dignissim velit, vel luctus sapien ultrices id. Nulla porttitor sollicitudin elementum. Aenean congue, lorem elementum convallis volutpat, augue felis tincidunt tellus, sed lacinia purus arcu sed mauris. Integer laoreet orci non sapien pharetra, ac porttitor risus finibus.</i></p>
-          </Col>        
-          <h5><b>Nama : <i>{nama}</i> </b></h5>
-          <h5><b>Harga : <i>Rp {Number(harga).toLocaleString('id-ID')}</i> </b></h5>
+          </Col>
+          <br/>         
+          <h5><b>Nama : <i>{this.state.nama}</i> </b></h5>
+          <h5><b>Harga : <i>Rp {Number(this.state.harga).toLocaleString('id-ID')}</i> </b></h5>
+          <br/> 
           <Col className="wrapper-input-button d-flex">
             <Form.Control type="number" step="1" min="1" max="" name="quantity" defaultValue="1" title="Qty" className="input-text qty text" size="4" pattern="" inputMode="" style={{ "textAlign": "center", "width": "100px", "marginRight": "20px" }} />
-            <Button type="button" className="pricey btn-info" onClick={() => this.clickPrice(harga) }>Buy Product? (Harga Dalam Alert)</Button>
+            <Button type="button" className="pricey btn-info" onClick={ () => this.clickPrice(this.state.harga) } >Buy Product? (Harga Dalam Alert)</Button>
           </Col>
           <br/>          
         </Col>

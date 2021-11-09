@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom'
 
 // import ListProductx from './Components/ListProductx'
 // import JudulProductx from './Components/JudulProductx'
@@ -14,6 +14,7 @@ class Routes extends React.Component {
     return(
       <Router>
         <Switch>
+          <Redirect exact from="/" to="/flower" />
           <Route exact path="/flower" component= { Main } />
 
           {/* <Route path="/flower/:indeks/:nama">
@@ -23,8 +24,8 @@ class Routes extends React.Component {
           <Route path="/flower/:indeks/:harga/:nama" component={ MainFD } /> 
           {/* <Route path="/details/:id" component={DetailsPage}/> */}
 
-          <Route exact path="/binarsatu" component={ MainSatu } />
-          <Route exact path="/binardua" component={ MainDua } />
+          <Route path="/binarsatu" component={ MainSatu } />
+          <Route path="/binardua" component={ MainDua } />
         </Switch>
       </Router>
     )
